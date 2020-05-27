@@ -4,6 +4,9 @@
     <e p="C:\Users\Zair Alexander Ortíz\.Rider2019.3\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Zair Alexander Ortíz\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_App_Delivery_HUGO.-1576325757.00" t="ExcludeRecursive" />
     <e p="C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\ZAOF_00355519_2EP\SourceCode\App_Delivery_HUGO" t="IncludeRecursive">
+      <e p="Address.cs" t="Include" />
+      <e p="Address.Designer.cs" t="Include" />
+      <e p="Address.resx" t="Include" />
       <e p="App.config" t="Include" />
       <e p="App_Delivery_HUGO.csproj" t="IncludeRecursive" />
       <e p="App_Delivery_HUGO.sln" t="IncludeFlat" />
@@ -48,12 +51,10 @@
       </e>
       <e p="User.cs" t="Include" />
       <e p="UserDAO.cs" t="Include" />
+      <e p="UsernameExistExeption.cs" t="Include" />
       <e p="ViewUsers.cs" t="Include" />
       <e p="ViewUsers.Designer.cs" t="Include" />
       <e p="ViewUsers.resx" t="Include" />
-      <e p="Welcome.cs" t="Include" />
-      <e p="Welcome.Designer.cs" t="Include" />
-      <e p="Welcome.resx" t="Include" />
     </e>
   </component>
 </project>

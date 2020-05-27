@@ -2,9 +2,9 @@
 
 namespace App_Delivery_HUGO
 {
-    public partial class Welcome : UserControl
+    public partial class Address : UserControl
     {
-        public Welcome()
+        public Address()
         {
             InitializeComponent();
         }

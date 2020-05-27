@@ -5,9 +5,11 @@ namespace App_Delivery_HUGO
 {
     public partial class ChangePassword : UserControl
     {
-        public ChangePassword()
+        private User unUser;
+        public ChangePassword(User u)
         {
             InitializeComponent();
+            unUser = u;
         }
 
         private void ChangePassword_Load(object sender, EventArgs e)

@@ -222,20 +222,20 @@ namespace App_Delivery_HUGO
             this.tableLayoutPanel3.RowStyles.Add(
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.01754F));
             this.tableLayoutPanel3.RowStyles.Add(
-                new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 21.40351F));
+                new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 32.22997F));
             this.tableLayoutPanel3.RowStyles.Add(
-                new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.08772F));
+                new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.50523F));
             this.tableLayoutPanel3.RowStyles.Add(
-                new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.85965F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(815, 562);
+                new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.310105F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(815, 574);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // label2
             // 
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Location = new System.Drawing.Point(3, 181);
+            this.label2.Location = new System.Drawing.Point(3, 185);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(337, 95);
+            this.label2.Size = new System.Drawing.Size(337, 97);
             this.label2.TabIndex = 0;
             this.label2.Text = "NOMBRE DEL NEGOCIO:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -243,9 +243,9 @@ namespace App_Delivery_HUGO
             // label3
             // 
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Location = new System.Drawing.Point(3, 276);
+            this.label3.Location = new System.Drawing.Point(3, 282);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(337, 120);
+            this.label3.Size = new System.Drawing.Size(337, 184);
             this.label3.TabIndex = 1;
             this.label3.Text = "DESCRIPCION:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -253,7 +253,7 @@ namespace App_Delivery_HUGO
             // txtNameBusiness
             // 
             this.txtNameBusiness.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtNameBusiness.Location = new System.Drawing.Point(393, 211);
+            this.txtNameBusiness.Location = new System.Drawing.Point(393, 216);
             this.txtNameBusiness.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNameBusiness.Name = "txtNameBusiness";
             this.txtNameBusiness.Size = new System.Drawing.Size(371, 34);
@@ -262,7 +262,7 @@ namespace App_Delivery_HUGO
             // txtDescription
             // 
             this.txtDescription.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtDescription.Location = new System.Drawing.Point(393, 319);
+            this.txtDescription.Location = new System.Drawing.Point(393, 357);
             this.txtDescription.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.Size = new System.Drawing.Size(371, 34);
@@ -282,10 +282,10 @@ namespace App_Delivery_HUGO
             this.btnAddBusiness.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F,
                 System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.btnAddBusiness.ForeColor = System.Drawing.Color.White;
-            this.btnAddBusiness.Location = new System.Drawing.Point(3, 398);
+            this.btnAddBusiness.Location = new System.Drawing.Point(3, 468);
             this.btnAddBusiness.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddBusiness.Name = "btnAddBusiness";
-            this.btnAddBusiness.Size = new System.Drawing.Size(809, 80);
+            this.btnAddBusiness.Size = new System.Drawing.Size(809, 84);
             this.btnAddBusiness.TabIndex = 4;
             this.btnAddBusiness.Text = "AGREGAR";
             this.btnAddBusiness.UseVisualStyleBackColor = false;
@@ -299,7 +299,7 @@ namespace App_Delivery_HUGO
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(3, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(809, 90);
+            this.label4.Size = new System.Drawing.Size(809, 92);
             this.label4.TabIndex = 5;
             this.label4.Text = "INGRESE LOS DATOS DEL NEGOCIO";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -321,11 +321,11 @@ namespace App_Delivery_HUGO
             this.tableLayoutPanel5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.tableLayoutPanel5.ColumnCount = 3;
             this.tableLayoutPanel5.ColumnStyles.Add(
-                new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.51777F));
+                new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.1227F));
             this.tableLayoutPanel5.ColumnStyles.Add(
-                new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.77157F));
+                new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.05521F));
             this.tableLayoutPanel5.ColumnStyles.Add(
-                new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.83756F));
+                new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.69939F));
             this.tableLayoutPanel5.Controls.Add(this.label6, 0, 1);
             this.tableLayoutPanel5.Controls.Add(this.btnDeleteBusiness, 1, 3);
             this.tableLayoutPanel5.Controls.Add(this.cmbBusiness, 1, 1);
@@ -339,20 +339,20 @@ namespace App_Delivery_HUGO
             this.tableLayoutPanel5.RowStyles.Add(
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.52892F));
             this.tableLayoutPanel5.RowStyles.Add(
-                new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 21.69421F));
+                new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.95819F));
             this.tableLayoutPanel5.RowStyles.Add(
-                new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.38843F));
+                new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.33798F));
             this.tableLayoutPanel5.RowStyles.Add(
-                new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.04132F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(815, 562);
+                new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.63415F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(815, 574);
             this.tableLayoutPanel5.TabIndex = 1;
             // 
             // label6
             // 
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Location = new System.Drawing.Point(3, 131);
+            this.label6.Location = new System.Drawing.Point(3, 134);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(274, 92);
+            this.label6.Size = new System.Drawing.Size(321, 95);
             this.label6.TabIndex = 0;
             this.label6.Text = "NEGOCIO A ELIMINAR:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -371,10 +371,10 @@ namespace App_Delivery_HUGO
             this.btnDeleteBusiness.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDeleteBusiness.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F,
                 System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.btnDeleteBusiness.Location = new System.Drawing.Point(283, 346);
+            this.btnDeleteBusiness.Location = new System.Drawing.Point(330, 380);
             this.btnDeleteBusiness.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDeleteBusiness.Name = "btnDeleteBusiness";
-            this.btnDeleteBusiness.Size = new System.Drawing.Size(277, 99);
+            this.btnDeleteBusiness.Size = new System.Drawing.Size(296, 107);
             this.btnDeleteBusiness.TabIndex = 2;
             this.btnDeleteBusiness.Text = "ELIMINAR";
             this.btnDeleteBusiness.UseVisualStyleBackColor = false;
@@ -384,7 +384,7 @@ namespace App_Delivery_HUGO
             this.cmbBusiness.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tableLayoutPanel5.SetColumnSpan(this.cmbBusiness, 2);
             this.cmbBusiness.FormattingEnabled = true;
-            this.cmbBusiness.Location = new System.Drawing.Point(410, 159);
+            this.cmbBusiness.Location = new System.Drawing.Point(434, 164);
             this.cmbBusiness.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbBusiness.Name = "cmbBusiness";
             this.cmbBusiness.Size = new System.Drawing.Size(274, 35);

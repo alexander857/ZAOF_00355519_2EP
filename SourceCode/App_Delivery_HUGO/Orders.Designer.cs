@@ -37,6 +37,7 @@ namespace App_Delivery_HUGO
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnUptadeOrders = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.label4 = new System.Windows.Forms.Label();
@@ -50,16 +51,15 @@ namespace App_Delivery_HUGO
             this.label6 = new System.Windows.Forms.Label();
             this.btnDeleteOrder = new System.Windows.Forms.Button();
             this.txtIdOrderDelete = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize) (this.dataGridView1)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize) (this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -168,6 +168,22 @@ namespace App_Delivery_HUGO
             this.btnUptadeOrders.Text = "ACTUALIZAR";
             this.btnUptadeOrders.UseVisualStyleBackColor = false;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode =
+                System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tableLayoutPanel2.SetColumnSpan(this.dataGridView1, 2);
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 73);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(881, 403);
+            this.dataGridView1.TabIndex = 2;
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.tableLayoutPanel3);
@@ -175,13 +191,14 @@ namespace App_Delivery_HUGO
             this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage2.Size = new System.Drawing.Size(893, 553);
+            this.tabPage2.Size = new System.Drawing.Size(893, 554);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "ORDENAR";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel3
             // 
+            this.tableLayoutPanel3.BackColor = System.Drawing.Color.MediumPurple;
             this.tableLayoutPanel3.ColumnCount = 2;
             this.tableLayoutPanel3.ColumnStyles.Add(
                 new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -207,12 +224,12 @@ namespace App_Delivery_HUGO
             this.tableLayoutPanel3.RowStyles.Add(
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.09091F));
             this.tableLayoutPanel3.RowStyles.Add(
-                new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.09091F));
+                new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.27273F));
             this.tableLayoutPanel3.RowStyles.Add(
-                new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.18182F));
+                new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.63636F));
             this.tableLayoutPanel3.RowStyles.Add(
-                new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.81818F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(887, 540);
+                new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.181818F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(887, 550);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // label4
@@ -223,7 +240,7 @@ namespace App_Delivery_HUGO
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label4.Location = new System.Drawing.Point(3, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(881, 66);
+            this.label4.Size = new System.Drawing.Size(881, 67);
             this.label4.TabIndex = 3;
             this.label4.Text = "DATOS DE SU ORDEN";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -240,10 +257,10 @@ namespace App_Delivery_HUGO
             this.btnSendOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSendOrder.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F,
                 System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.btnSendOrder.Location = new System.Drawing.Point(3, 379);
+            this.btnSendOrder.Location = new System.Drawing.Point(3, 410);
             this.btnSendOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSendOrder.Name = "btnSendOrder";
-            this.btnSendOrder.Size = new System.Drawing.Size(881, 82);
+            this.btnSendOrder.Size = new System.Drawing.Size(881, 92);
             this.btnSendOrder.TabIndex = 2;
             this.btnSendOrder.Text = "ENVIAR";
             this.btnSendOrder.UseVisualStyleBackColor = false;
@@ -251,9 +268,9 @@ namespace App_Delivery_HUGO
             // label3
             // 
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Location = new System.Drawing.Point(3, 227);
+            this.label3.Location = new System.Drawing.Point(3, 232);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(437, 80);
+            this.label3.Size = new System.Drawing.Size(437, 82);
             this.label3.TabIndex = 1;
             this.label3.Text = "SELECCIONE SU DIRECCION:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -261,9 +278,9 @@ namespace App_Delivery_HUGO
             // label2
             // 
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Location = new System.Drawing.Point(3, 145);
+            this.label2.Location = new System.Drawing.Point(3, 148);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(437, 82);
+            this.label2.Size = new System.Drawing.Size(437, 84);
             this.label2.TabIndex = 0;
             this.label2.Text = "SELECCIONE EL PRODUCTO:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -272,7 +289,7 @@ namespace App_Delivery_HUGO
             // 
             this.cmbProduct.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cmbProduct.FormattingEnabled = true;
-            this.cmbProduct.Location = new System.Drawing.Point(524, 170);
+            this.cmbProduct.Location = new System.Drawing.Point(524, 174);
             this.cmbProduct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbProduct.Name = "cmbProduct";
             this.cmbProduct.Size = new System.Drawing.Size(282, 31);
@@ -282,7 +299,7 @@ namespace App_Delivery_HUGO
             // 
             this.cmbAddress.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cmbAddress.FormattingEnabled = true;
-            this.cmbAddress.Location = new System.Drawing.Point(524, 251);
+            this.cmbAddress.Location = new System.Drawing.Point(524, 257);
             this.cmbAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbAddress.Name = "cmbAddress";
             this.cmbAddress.Size = new System.Drawing.Size(282, 31);
@@ -295,7 +312,7 @@ namespace App_Delivery_HUGO
             this.tabPage3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage3.Size = new System.Drawing.Size(893, 553);
+            this.tabPage3.Size = new System.Drawing.Size(893, 554);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "ELIMINAR";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -303,6 +320,7 @@ namespace App_Delivery_HUGO
             // tableLayoutPanel5
             // 
             this.tableLayoutPanel5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.tableLayoutPanel5.BackColor = System.Drawing.Color.MediumOrchid;
             this.tableLayoutPanel5.ColumnCount = 3;
             this.tableLayoutPanel5.ColumnStyles.Add(
                 new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 34.51777F));
@@ -328,15 +346,15 @@ namespace App_Delivery_HUGO
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.38843F));
             this.tableLayoutPanel5.RowStyles.Add(
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.04132F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(887, 540);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(887, 550);
             this.tableLayoutPanel5.TabIndex = 1;
             // 
             // label6
             // 
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Location = new System.Drawing.Point(3, 126);
+            this.label6.Location = new System.Drawing.Point(3, 128);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(299, 89);
+            this.label6.Size = new System.Drawing.Size(299, 90);
             this.label6.TabIndex = 0;
             this.label6.Text = "ID DE ORDEN A ELIMINAR:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -355,10 +373,10 @@ namespace App_Delivery_HUGO
             this.btnDeleteOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDeleteOrder.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F,
                 System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.btnDeleteOrder.Location = new System.Drawing.Point(308, 334);
+            this.btnDeleteOrder.Location = new System.Drawing.Point(308, 339);
             this.btnDeleteOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDeleteOrder.Name = "btnDeleteOrder";
-            this.btnDeleteOrder.Size = new System.Drawing.Size(302, 95);
+            this.btnDeleteOrder.Size = new System.Drawing.Size(302, 97);
             this.btnDeleteOrder.TabIndex = 2;
             this.btnDeleteOrder.Text = "ELIMINAR";
             this.btnDeleteOrder.UseVisualStyleBackColor = false;
@@ -367,26 +385,11 @@ namespace App_Delivery_HUGO
             // 
             this.txtIdOrderDelete.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tableLayoutPanel5.SetColumnSpan(this.txtIdOrderDelete, 2);
-            this.txtIdOrderDelete.Location = new System.Drawing.Point(462, 155);
+            this.txtIdOrderDelete.Location = new System.Drawing.Point(462, 157);
             this.txtIdOrderDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtIdOrderDelete.Name = "txtIdOrderDelete";
             this.txtIdOrderDelete.Size = new System.Drawing.Size(267, 31);
             this.txtIdOrderDelete.TabIndex = 3;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode =
-                System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tableLayoutPanel2.SetColumnSpan(this.dataGridView1, 2);
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 74);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(881, 401);
-            this.dataGridView1.TabIndex = 2;
             // 
             // Orders
             // 
@@ -401,12 +404,12 @@ namespace App_Delivery_HUGO
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize) (this.dataGridView1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize) (this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
         }
 

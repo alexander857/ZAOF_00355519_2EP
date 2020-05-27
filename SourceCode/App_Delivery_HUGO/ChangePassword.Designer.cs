@@ -58,6 +58,7 @@ namespace App_Delivery_HUGO
             this.tableLayoutPanel1.Controls.Add(this.txtNewPassword, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.txtVerifyPassword, 1, 4);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.ForeColor = System.Drawing.Color.White;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -130,6 +131,7 @@ namespace App_Delivery_HUGO
             this.btnChangePassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnChangePassword.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F,
                 System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.btnChangePassword.ForeColor = System.Drawing.Color.Black;
             this.btnChangePassword.Location = new System.Drawing.Point(3, 392);
             this.btnChangePassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnChangePassword.Name = "btnChangePassword";

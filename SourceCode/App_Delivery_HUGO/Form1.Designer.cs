@@ -42,6 +42,7 @@
             this.btnOrderUser = new System.Windows.Forms.ToolStripMenuItem();
             this.aJUSTESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnChangePassword = new System.Windows.Forms.ToolStripMenuItem();
+            this.orders1 = new App_Delivery_HUGO.Orders(unUser);
             this.tableLayoutPanel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -55,6 +56,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(
                 new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Controls.Add(this.menuStrip1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.orders1, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -100,36 +102,41 @@
             this.btnUsers.BackColor = System.Drawing.Color.Silver;
             this.btnUsers.ForeColor = System.Drawing.Color.Black;
             this.btnUsers.Name = "btnUsers";
-            this.btnUsers.Size = new System.Drawing.Size(176, 26);
+            this.btnUsers.Size = new System.Drawing.Size(181, 26);
             this.btnUsers.Text = "USUARIOS";
+            this.btnUsers.Click += new System.EventHandler(this.btnUsers_Click);
             // 
             // btnChart
             // 
             this.btnChart.BackColor = System.Drawing.Color.Silver;
             this.btnChart.Name = "btnChart";
-            this.btnChart.Size = new System.Drawing.Size(176, 26);
+            this.btnChart.Size = new System.Drawing.Size(181, 26);
             this.btnChart.Text = "GRAFICO";
+            this.btnChart.Click += new System.EventHandler(this.btnChart_Click);
             // 
             // btnBusiness
             // 
             this.btnBusiness.BackColor = System.Drawing.Color.Silver;
             this.btnBusiness.Name = "btnBusiness";
-            this.btnBusiness.Size = new System.Drawing.Size(176, 26);
+            this.btnBusiness.Size = new System.Drawing.Size(181, 26);
             this.btnBusiness.Text = "NEGOCIOS";
+            this.btnBusiness.Click += new System.EventHandler(this.btnBusiness_Click);
             // 
             // btnProduct
             // 
             this.btnProduct.BackColor = System.Drawing.Color.Silver;
             this.btnProduct.Name = "btnProduct";
-            this.btnProduct.Size = new System.Drawing.Size(176, 26);
+            this.btnProduct.Size = new System.Drawing.Size(181, 26);
             this.btnProduct.Text = "PRODUCTOS";
+            this.btnProduct.Click += new System.EventHandler(this.btnProduct_Click);
             // 
             // btnOrderAdmin
             // 
             this.btnOrderAdmin.BackColor = System.Drawing.Color.Silver;
             this.btnOrderAdmin.Name = "btnOrderAdmin";
-            this.btnOrderAdmin.Size = new System.Drawing.Size(176, 26);
+            this.btnOrderAdmin.Size = new System.Drawing.Size(181, 26);
             this.btnOrderAdmin.Text = "ORDENES";
+            this.btnOrderAdmin.Click += new System.EventHandler(this.btnOrderAdmin_Click);
             // 
             // uSUARIOToolStripMenuItem
             // 
@@ -145,16 +152,18 @@
             this.btnAddress.BackColor = System.Drawing.Color.BlueViolet;
             this.btnAddress.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnAddress.Name = "btnAddress";
-            this.btnAddress.Size = new System.Drawing.Size(169, 26);
+            this.btnAddress.Size = new System.Drawing.Size(181, 26);
             this.btnAddress.Text = "DIRECCION";
+            this.btnAddress.Click += new System.EventHandler(this.btnAddress_Click);
             // 
             // btnOrderUser
             // 
             this.btnOrderUser.BackColor = System.Drawing.Color.BlueViolet;
             this.btnOrderUser.ForeColor = System.Drawing.Color.LavenderBlush;
             this.btnOrderUser.Name = "btnOrderUser";
-            this.btnOrderUser.Size = new System.Drawing.Size(169, 26);
+            this.btnOrderUser.Size = new System.Drawing.Size(181, 26);
             this.btnOrderUser.Text = "ORDENES";
+            this.btnOrderUser.Click += new System.EventHandler(this.btnOrderUser_Click);
             // 
             // aJUSTESToolStripMenuItem
             // 
@@ -173,6 +182,17 @@
             this.btnChangePassword.Name = "btnChangePassword";
             this.btnChangePassword.Size = new System.Drawing.Size(259, 26);
             this.btnChangePassword.Text = "CAMBIAR CONTRASEÑA";
+            this.btnChangePassword.Click += new System.EventHandler(this.btnChangePassword_Click);
+            // 
+            // orders1
+            // 
+            this.tableLayoutPanel1.SetColumnSpan(this.orders1, 2);
+            this.orders1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.orders1.Location = new System.Drawing.Point(3, 43);
+            this.orders1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.orders1.Name = "orders1";
+            this.orders1.Size = new System.Drawing.Size(856, 559);
+            this.orders1.TabIndex = 1;
             // 
             // Form1
             // 
@@ -213,5 +233,6 @@
         private System.Windows.Forms.ToolStripMenuItem btnAddress;
         private System.Windows.Forms.ToolStripMenuItem btnOrderUser;
         private System.Windows.Forms.ToolStripMenuItem btnChangePassword;
+        private App_Delivery_HUGO.Orders orders1;
     }
 }

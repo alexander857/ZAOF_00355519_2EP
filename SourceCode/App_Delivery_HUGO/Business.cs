@@ -5,9 +5,11 @@ namespace App_Delivery_HUGO
 {
     public partial class Business : UserControl
     {
-        public Business()
+        private User unUser;
+        public Business(User u)
         {
             InitializeComponent();
+            unUser = u;
         }
 
         private void Business_Load(object sender, EventArgs e)

@@ -32,5 +32,23 @@ namespace App_Delivery_HUGO
 
             return users;
         }
+  
+        public static void AddUser(User u)
+        {
+            string sql = String.Format(
+                $"INSERT INTO APPUSER(fullname,username,password,userType) VALUES" +
+                $"('{u.Fullname}','{u.Username}','{u.Password}',{u.Type})"
+            );
+            
+            ConnectionBDD.ExecuteNonQuery(sql); 
+        }
+
+        public static void DeleteUser(int id)
+        {
+            string sql = String.Format(
+                $"DELETE FROM APPUSER WHERE idUser ={id}"
+                );
+            ConnectionBDD.ExecuteNonQuery(sql);
+        }
     }
 }

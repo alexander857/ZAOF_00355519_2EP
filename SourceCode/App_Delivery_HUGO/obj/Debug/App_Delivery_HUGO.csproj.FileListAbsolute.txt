@@ -1,5 +1,4 @@
 C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\ZAOF_00355519_2EP\SourceCode\App_Delivery_HUGO\bin\Debug\App_Delivery_HUGO.exe.config
-C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\ZAOF_00355519_2EP\SourceCode\App_Delivery_HUGO\bin\Debug\App_Delivery_HUGO.exe
 C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\ZAOF_00355519_2EP\SourceCode\App_Delivery_HUGO\bin\Debug\App_Delivery_HUGO.pdb
 C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\ZAOF_00355519_2EP\SourceCode\App_Delivery_HUGO\obj\Debug\App_Delivery_HUGO.csprojAssemblyReference.cache
 C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\ZAOF_00355519_2EP\SourceCode\App_Delivery_HUGO\obj\Debug\App_Delivery_HUGO.Properties.Resources.resources
@@ -37,4 +36,4 @@ C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\ZAOF_00355519_2EP\SourceCod
 C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\ZAOF_00355519_2EP\SourceCode\App_Delivery_HUGO\obj\Debug\App_Delivery_HUGO.Products.resources
 C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\ZAOF_00355519_2EP\SourceCode\App_Delivery_HUGO\obj\Debug\App_Delivery_HUGO.ViewUsers.resources
 C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\ZAOF_00355519_2EP\SourceCode\App_Delivery_HUGO\obj\Debug\App_Delivery_HUGO.csproj.CopyComplete
-C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\ZAOF_00355519_2EP\SourceCode\App_Delivery_HUGO\obj\Debug\App_Delivery_HUGO.Welcome.resources
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\ZAOF_00355519_2EP\SourceCode\App_Delivery_HUGO\obj\Debug\App_Delivery_HUGO.Address.resources
