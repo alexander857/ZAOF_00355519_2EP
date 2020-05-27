@@ -8,6 +8,16 @@
       <e p="App_Delivery_HUGO.csproj" t="IncludeRecursive" />
       <e p="App_Delivery_HUGO.sln" t="IncludeFlat" />
       <e p="bin" t="ExcludeRecursive" />
+      <e p="Business.cs" t="Include" />
+      <e p="Business.Designer.cs" t="Include" />
+      <e p="Business.resx" t="Include" />
+      <e p="ChangePassword.cs" t="Include" />
+      <e p="ChangePassword.Designer.cs" t="Include" />
+      <e p="ChangePassword.resx" t="Include" />
+      <e p="Chart.cs" t="Include" />
+      <e p="Chart.Designer.cs" t="Include" />
+      <e p="Chart.resx" t="Include" />
+      <e p="ConnectionBDD.cs" t="Include" />
       <e p="Form1.cs" t="Include" />
       <e p="Form1.Designer.cs" t="Include" />
       <e p="Form1.resx" t="Include" />
@@ -15,7 +25,14 @@
       <e p="Login.Designer.cs" t="Include" />
       <e p="Login.resx" t="Include" />
       <e p="obj" t="ExcludeRecursive" />
+      <e p="Orders.cs" t="Include" />
+      <e p="Orders.Designer.cs" t="Include" />
+      <e p="Orders.resx" t="Include" />
       <e p="packages" t="ExcludeRecursive" />
+      <e p="packages.config" t="Include" />
+      <e p="Products.cs" t="Include" />
+      <e p="Products.Designer.cs" t="Include" />
+      <e p="Products.resx" t="Include" />
       <e p="Program.cs" t="Include" />
       <e p="Properties" t="Include">
         <e p="AssemblyInfo.cs" t="Include" />
@@ -29,6 +46,14 @@
         <e p="iconoHUGO.png" t="Include" />
         <e p="Users2_37173.png" t="Include" />
       </e>
+      <e p="User.cs" t="Include" />
+      <e p="UserDAO.cs" t="Include" />
+      <e p="ViewUsers.cs" t="Include" />
+      <e p="ViewUsers.Designer.cs" t="Include" />
+      <e p="ViewUsers.resx" t="Include" />
+      <e p="Welcome.cs" t="Include" />
+      <e p="Welcome.Designer.cs" t="Include" />
+      <e p="Welcome.resx" t="Include" />
     </e>
   </component>
 </project>

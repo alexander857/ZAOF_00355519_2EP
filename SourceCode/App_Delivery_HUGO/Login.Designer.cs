@@ -62,6 +62,7 @@ namespace App_Delivery_HUGO
             this.tableLayoutPanel1.Controls.Add(this.btnStart, 1, 5);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 7;
             this.tableLayoutPanel1.RowStyles.Add(
@@ -85,6 +86,7 @@ namespace App_Delivery_HUGO
             // 
             this.txtPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtPassword.Location = new System.Drawing.Point(79, 377);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(242, 27);
@@ -95,9 +97,10 @@ namespace App_Delivery_HUGO
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::App_Delivery_HUGO.Properties.Resources.iconoHUGO;
-            this.pictureBox1.Location = new System.Drawing.Point(56, 45);
+            this.pictureBox1.Location = new System.Drawing.Point(56, 44);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(289, 249);
+            this.pictureBox1.Size = new System.Drawing.Size(289, 251);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
@@ -106,7 +109,8 @@ namespace App_Delivery_HUGO
             // 
             this.cmbUsers.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cmbUsers.FormattingEnabled = true;
-            this.cmbUsers.Location = new System.Drawing.Point(80, 315);
+            this.cmbUsers.Location = new System.Drawing.Point(80, 313);
+            this.cmbUsers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbUsers.Name = "cmbUsers";
             this.cmbUsers.Size = new System.Drawing.Size(240, 28);
             this.cmbUsers.TabIndex = 1;
@@ -116,9 +120,10 @@ namespace App_Delivery_HUGO
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox2.Image = global::App_Delivery_HUGO.Properties.Resources.Users2_37173;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 300);
+            this.pictureBox2.Location = new System.Drawing.Point(3, 299);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(47, 55);
+            this.pictureBox2.Size = new System.Drawing.Size(47, 57);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
@@ -128,9 +133,10 @@ namespace App_Delivery_HUGO
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox3.Image = global::App_Delivery_HUGO.Properties.Resources.contraseña;
-            this.pictureBox3.Location = new System.Drawing.Point(3, 361);
+            this.pictureBox3.Location = new System.Drawing.Point(3, 360);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(47, 59);
+            this.pictureBox3.Size = new System.Drawing.Size(47, 61);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
@@ -146,12 +152,14 @@ namespace App_Delivery_HUGO
             this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStart.Font = new System.Drawing.Font("Arial Rounded MT Bold", 19.8F,
                 System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.btnStart.Location = new System.Drawing.Point(56, 502);
+            this.btnStart.Location = new System.Drawing.Point(56, 501);
+            this.btnStart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(289, 108);
+            this.btnStart.Size = new System.Drawing.Size(289, 110);
             this.btnStart.TabIndex = 2;
             this.btnStart.Text = "INICIAR";
             this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // Login
             // 
@@ -162,8 +170,11 @@ namespace App_Delivery_HUGO
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MaximizeBox = false;
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).EndInit();
