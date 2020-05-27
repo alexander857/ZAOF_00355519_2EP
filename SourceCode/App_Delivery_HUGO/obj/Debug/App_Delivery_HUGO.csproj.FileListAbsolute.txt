@@ -1,0 +1,10 @@
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\ZAOF_00355519_2EP\SourceCode\App_Delivery_HUGO\bin\Debug\App_Delivery_HUGO.exe.config
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\ZAOF_00355519_2EP\SourceCode\App_Delivery_HUGO\bin\Debug\App_Delivery_HUGO.exe
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\ZAOF_00355519_2EP\SourceCode\App_Delivery_HUGO\bin\Debug\App_Delivery_HUGO.pdb
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\ZAOF_00355519_2EP\SourceCode\App_Delivery_HUGO\obj\Debug\App_Delivery_HUGO.csprojAssemblyReference.cache
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\ZAOF_00355519_2EP\SourceCode\App_Delivery_HUGO\obj\Debug\App_Delivery_HUGO.Properties.Resources.resources
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\ZAOF_00355519_2EP\SourceCode\App_Delivery_HUGO\obj\Debug\App_Delivery_HUGO.csproj.GenerateResource.cache
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\ZAOF_00355519_2EP\SourceCode\App_Delivery_HUGO\obj\Debug\App_Delivery_HUGO.exe
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\ZAOF_00355519_2EP\SourceCode\App_Delivery_HUGO\obj\Debug\App_Delivery_HUGO.pdb
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\ZAOF_00355519_2EP\SourceCode\App_Delivery_HUGO\obj\Debug\App_Delivery_HUGO.Form1.resources
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\ZAOF_00355519_2EP\SourceCode\App_Delivery_HUGO\obj\Debug\App_Delivery_HUGO.Login.resources
