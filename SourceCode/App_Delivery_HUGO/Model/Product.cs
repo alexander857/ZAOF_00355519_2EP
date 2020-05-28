@@ -4,13 +4,7 @@
     {
         private int idProd, idBusiness;
         private string name;
-
-        public Product(int idProd, int idBusiness, string name)
-        {
-            this.idProd = idProd;
-            this.idBusiness = idBusiness;
-            this.name = name;
-        }
+        
 
         //sobrecarga no recibe id
         public Product(int idBusiness, string name)

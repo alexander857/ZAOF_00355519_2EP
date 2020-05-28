@@ -5,15 +5,7 @@
         private int id;
         private string fullname, username, password;
         private bool type;
-
-        public User(int id, string fullname, string username, string password, bool type)
-        {
-            this.id = id;
-            this.fullname = fullname;
-            this.username = username;
-            this.password = password;
-            this.type = type;
-        }
+        
 
         //sobrecarga contructor que no recibe id
         public User(string fullname, string username, string password, bool type)

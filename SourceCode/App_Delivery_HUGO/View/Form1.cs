@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace App_Delivery_HUGO
@@ -22,7 +15,8 @@ namespace App_Delivery_HUGO
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            DeactiveOptions(); //desactivar opciones segun tipo de usuario
+            lblWelcome.Text = "Bienvenido a HUGO, " + unUser.Username;
         }
 
         //cerrar el programa
@@ -119,6 +113,14 @@ namespace App_Delivery_HUGO
             current.Dock = DockStyle.Fill;
             tableLayoutPanel1.Controls.Add(current,0,1);
             tableLayoutPanel1.SetColumnSpan(current,2);
+        }
+
+        public void DeactiveOptions()
+        {
+            if (unUser.Type)
+                optionUser.Visible = false;
+            else
+                optionAdmin.Visible = false;
         }
     }
 }

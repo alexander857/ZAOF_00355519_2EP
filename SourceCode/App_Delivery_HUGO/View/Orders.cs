@@ -15,7 +15,10 @@ namespace App_Delivery_HUGO
         public void FillDataGrid()
         {
             dataGridView1.DataSource = null;
-            dataGridView1.DataSource = OrderDAO.getListaOrder(0,unUser.Id);
+            if(unUser.Type)
+                dataGridView1.DataSource = OrderDAO.getListaOrder(0,unUser.Id);
+            else 
+                dataGridView1.DataSource = OrderDAO.getListaOrder(1,unUser.Id);
         }
         
         //llenar combobox de producto
@@ -41,7 +44,7 @@ namespace App_Delivery_HUGO
             FillDataGrid();
             FillComboboxProduct();
             FillComboboxAddresst();
-            
+            DeactiveOptions();
         }
 
 
@@ -94,6 +97,16 @@ namespace App_Delivery_HUGO
                     MessageBox.Show("Orden eliminada con exito!");
                     txtIdOrderDelete.Text = "";
                 }
+            }
+        }
+        
+        //desactivar opciones
+        public void DeactiveOptions()
+        {
+            if (unUser.Type)
+            {
+                tabPage2.Parent = null;
+                tabPage3.Parent = null;
             }
         }
     }

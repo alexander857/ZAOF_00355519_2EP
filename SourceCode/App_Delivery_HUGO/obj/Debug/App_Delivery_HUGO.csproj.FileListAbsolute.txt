@@ -37,3 +37,12 @@ C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\ZAOF_00355519_2EP\SourceCod
 C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\ZAOF_00355519_2EP\SourceCode\App_Delivery_HUGO\obj\Debug\App_Delivery_HUGO.ViewUsers.resources
 C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\ZAOF_00355519_2EP\SourceCode\App_Delivery_HUGO\obj\Debug\App_Delivery_HUGO.csproj.CopyComplete
 C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\ZAOF_00355519_2EP\SourceCode\App_Delivery_HUGO\obj\Debug\App_Delivery_HUGO.Address.resources
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\ZAOF_00355519_2EP\SourceCode\App_Delivery_HUGO\bin\Debug\LiveCharts.dll
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\ZAOF_00355519_2EP\SourceCode\App_Delivery_HUGO\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\ZAOF_00355519_2EP\SourceCode\App_Delivery_HUGO\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\ZAOF_00355519_2EP\SourceCode\App_Delivery_HUGO\bin\Debug\LiveCharts.pdb
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\ZAOF_00355519_2EP\SourceCode\App_Delivery_HUGO\bin\Debug\LiveCharts.xml
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\ZAOF_00355519_2EP\SourceCode\App_Delivery_HUGO\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\ZAOF_00355519_2EP\SourceCode\App_Delivery_HUGO\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\ZAOF_00355519_2EP\SourceCode\App_Delivery_HUGO\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\ZAOF_00355519_2EP\SourceCode\App_Delivery_HUGO\bin\Debug\LiveCharts.Wpf.xml

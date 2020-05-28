@@ -46,7 +46,7 @@ namespace App_Delivery_HUGO
                 try
                 {
                     bool exist = false, admin;
-                    foreach (var u in UserDAO.getListaUsers())
+                    foreach (var u in UserDAO.getListaUsers()) //se busca que no haya otro con mismo username
                     {
                         if (u.Username.Equals(txtUsername))
                             exist = true;

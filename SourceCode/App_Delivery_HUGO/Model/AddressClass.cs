@@ -5,13 +5,6 @@
         private int idAddress, iduser;
         private string pAddress;
 
-        public AddressClass(int idAddress, int iduser, string address)
-        {
-            this.idAddress = idAddress;
-            this.iduser = iduser;
-            pAddress = address;
-        }
-
         public AddressClass(int iduser, string address)
         {
             this.iduser = iduser;

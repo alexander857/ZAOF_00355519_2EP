@@ -4,13 +4,7 @@
     {
         private int id;
         private string name, description;
-
-        public BusinessClass(int id, string name, string description)
-        {
-            this.id = id;
-            this.name = name;
-            this.description = description;
-        }
+        
 
         public BusinessClass(string name, string description)
         {
