@@ -16,7 +16,8 @@ namespace App_Delivery_HUGO
         private void Form1_Load(object sender, EventArgs e)
         {
             DeactiveOptions(); //desactivar opciones segun tipo de usuario
-            lblWelcome.Text = "Bienvenido a HUGO, " + unUser.Username;
+            lblWelcome.Text = "Bienvenido a HUGO, " + unUser.Username + "[" + (unUser.Type ? 
+                "Admin" : "Usuario") + "]";
         }
 
         //cerrar el programa
