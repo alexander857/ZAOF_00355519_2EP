@@ -139,6 +139,7 @@ namespace App_Delivery_HUGO
             this.btnChangePassword.TabIndex = 3;
             this.btnChangePassword.Text = "CAMBIAR";
             this.btnChangePassword.UseVisualStyleBackColor = false;
+            this.btnChangePassword.Click += new System.EventHandler(this.btnChangePassword_Click);
             // 
             // txtPasswordActual
             // 
@@ -146,6 +147,7 @@ namespace App_Delivery_HUGO
             this.txtPasswordActual.Location = new System.Drawing.Point(467, 105);
             this.txtPasswordActual.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPasswordActual.Name = "txtPasswordActual";
+            this.txtPasswordActual.PasswordChar = '*';
             this.txtPasswordActual.Size = new System.Drawing.Size(260, 27);
             this.txtPasswordActual.TabIndex = 4;
             // 
@@ -155,6 +157,7 @@ namespace App_Delivery_HUGO
             this.txtNewPassword.Location = new System.Drawing.Point(467, 198);
             this.txtNewPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNewPassword.Name = "txtNewPassword";
+            this.txtNewPassword.PasswordChar = '*';
             this.txtNewPassword.Size = new System.Drawing.Size(260, 27);
             this.txtNewPassword.TabIndex = 5;
             // 
@@ -164,6 +167,7 @@ namespace App_Delivery_HUGO
             this.txtVerifyPassword.Location = new System.Drawing.Point(467, 292);
             this.txtVerifyPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtVerifyPassword.Name = "txtVerifyPassword";
+            this.txtVerifyPassword.PasswordChar = '*';
             this.txtVerifyPassword.Size = new System.Drawing.Size(260, 27);
             this.txtVerifyPassword.TabIndex = 6;
             // 

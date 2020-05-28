@@ -7,6 +7,8 @@
       <e p="Address.cs" t="Include" />
       <e p="Address.Designer.cs" t="Include" />
       <e p="Address.resx" t="Include" />
+      <e p="AddressClass.cs" t="Include" />
+      <e p="AddressDAO.cs" t="Include" />
       <e p="App.config" t="Include" />
       <e p="App_Delivery_HUGO.csproj" t="IncludeRecursive" />
       <e p="App_Delivery_HUGO.sln" t="IncludeFlat" />
@@ -14,6 +16,8 @@
       <e p="Business.cs" t="Include" />
       <e p="Business.Designer.cs" t="Include" />
       <e p="Business.resx" t="Include" />
+      <e p="BusinessClass.cs" t="Include" />
+      <e p="BusinessDAO.cs" t="Include" />
       <e p="ChangePassword.cs" t="Include" />
       <e p="ChangePassword.Designer.cs" t="Include" />
       <e p="ChangePassword.resx" t="Include" />
@@ -33,6 +37,8 @@
       <e p="Orders.resx" t="Include" />
       <e p="packages" t="ExcludeRecursive" />
       <e p="packages.config" t="Include" />
+      <e p="Product.cs" t="Include" />
+      <e p="ProductDAO.cs" t="Include" />
       <e p="Products.cs" t="Include" />
       <e p="Products.Designer.cs" t="Include" />
       <e p="Products.resx" t="Include" />

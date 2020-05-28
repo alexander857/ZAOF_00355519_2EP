@@ -116,7 +116,7 @@ namespace App_Delivery_HUGO
         private void btnAddress_Click(object sender, EventArgs e)
         {
             tableLayoutPanel1.Controls.Remove(current);
-            current = new Address();
+            current = new Address(unUser);
             current.Dock = DockStyle.Fill;
             tableLayoutPanel1.Controls.Add(current,0,1);
             tableLayoutPanel1.SetColumnSpan(current,2);

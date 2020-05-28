@@ -50,5 +50,15 @@ namespace App_Delivery_HUGO
                 );
             ConnectionBDD.ExecuteNonQuery(sql);
         }
+
+        public static void UpdatePassword(int id, string newPassword)
+        {
+            string sql = String.Format(
+                "UPDATE APPUSER SET password='{0}' WHERE iduser='{1}';",
+                newPassword,id);
+            
+            
+            ConnectionBDD.ExecuteNonQuery(sql);
+        }
     }
 }

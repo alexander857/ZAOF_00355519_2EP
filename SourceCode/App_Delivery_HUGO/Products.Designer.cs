@@ -36,7 +36,7 @@ namespace App_Delivery_HUGO
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnUpdateUsers = new System.Windows.Forms.Button();
+            this.btnUpdateProducts = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
@@ -44,13 +44,13 @@ namespace App_Delivery_HUGO
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtNameProduct = new System.Windows.Forms.TextBox();
-            this.btnAddUser = new System.Windows.Forms.Button();
             this.cmbBusiness = new System.Windows.Forms.ComboBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.label6 = new System.Windows.Forms.Label();
-            this.btnDeleteUser = new System.Windows.Forms.Button();
+            this.btnDeleteProduct = new System.Windows.Forms.Button();
             this.cmbProductDelete = new System.Windows.Forms.ComboBox();
+            this.btnAddProduct = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -118,7 +118,7 @@ namespace App_Delivery_HUGO
             this.tableLayoutPanel2.ColumnStyles.Add(
                 new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.btnUpdateUsers, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.btnUpdateProducts, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.dataGridView1, 0, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 2);
@@ -148,29 +148,30 @@ namespace App_Delivery_HUGO
             this.label1.Text = "LISTA DE PRODUCTOS";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnUpdateUsers
+            // btnUpdateProducts
             // 
-            this.btnUpdateUsers.BackColor = System.Drawing.Color.MediumOrchid;
-            this.tableLayoutPanel2.SetColumnSpan(this.btnUpdateUsers, 2);
-            this.btnUpdateUsers.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnUpdateUsers.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnUpdateUsers.FlatAppearance.BorderSize = 2;
-            this.btnUpdateUsers.FlatAppearance.MouseDownBackColor =
+            this.btnUpdateProducts.BackColor = System.Drawing.Color.MediumOrchid;
+            this.tableLayoutPanel2.SetColumnSpan(this.btnUpdateProducts, 2);
+            this.btnUpdateProducts.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnUpdateProducts.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnUpdateProducts.FlatAppearance.BorderSize = 2;
+            this.btnUpdateProducts.FlatAppearance.MouseDownBackColor =
                 System.Drawing.Color.FromArgb(((int) (((byte) (255)))), ((int) (((byte) (192)))),
                     ((int) (((byte) (255)))));
-            this.btnUpdateUsers.FlatAppearance.MouseOverBackColor =
+            this.btnUpdateProducts.FlatAppearance.MouseOverBackColor =
                 System.Drawing.Color.FromArgb(((int) (((byte) (255)))), ((int) (((byte) (128)))),
                     ((int) (((byte) (255)))));
-            this.btnUpdateUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdateUsers.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F,
+            this.btnUpdateProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdateProducts.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F,
                 System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.btnUpdateUsers.Location = new System.Drawing.Point(3, 453);
-            this.btnUpdateUsers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnUpdateUsers.Name = "btnUpdateUsers";
-            this.btnUpdateUsers.Size = new System.Drawing.Size(763, 69);
-            this.btnUpdateUsers.TabIndex = 1;
-            this.btnUpdateUsers.Text = "ACTUALIZAR";
-            this.btnUpdateUsers.UseVisualStyleBackColor = false;
+            this.btnUpdateProducts.Location = new System.Drawing.Point(3, 453);
+            this.btnUpdateProducts.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnUpdateProducts.Name = "btnUpdateProducts";
+            this.btnUpdateProducts.Size = new System.Drawing.Size(763, 69);
+            this.btnUpdateProducts.TabIndex = 1;
+            this.btnUpdateProducts.Text = "ACTUALIZAR";
+            this.btnUpdateProducts.UseVisualStyleBackColor = false;
+            this.btnUpdateProducts.Click += new System.EventHandler(this.btnUpdateProducts_Click);
             // 
             // dataGridView1
             // 
@@ -202,6 +203,7 @@ namespace App_Delivery_HUGO
             // 
             // tableLayoutPanel3
             // 
+            this.tableLayoutPanel3.BackColor = System.Drawing.Color.MediumOrchid;
             this.tableLayoutPanel3.ColumnCount = 3;
             this.tableLayoutPanel3.ColumnStyles.Add(
                 new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 39.59391F));
@@ -213,8 +215,8 @@ namespace App_Delivery_HUGO
             this.tableLayoutPanel3.Controls.Add(this.label3, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.label4, 0, 2);
             this.tableLayoutPanel3.Controls.Add(this.txtNameProduct, 1, 1);
-            this.tableLayoutPanel3.Controls.Add(this.btnAddUser, 1, 4);
             this.tableLayoutPanel3.Controls.Add(this.cmbBusiness, 1, 2);
+            this.tableLayoutPanel3.Controls.Add(this.btnAddProduct, 1, 4);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 2);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -237,6 +239,7 @@ namespace App_Delivery_HUGO
             // 
             // label2
             // 
+            this.label2.BackColor = System.Drawing.SystemColors.Control;
             this.tableLayoutPanel3.SetColumnSpan(this.label2, 3);
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular,
@@ -277,31 +280,11 @@ namespace App_Delivery_HUGO
             this.txtNameProduct.Size = new System.Drawing.Size(325, 31);
             this.txtNameProduct.TabIndex = 4;
             // 
-            // btnAddUser
-            // 
-            this.btnAddUser.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnAddUser.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAddUser.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnAddUser.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
-            this.btnAddUser.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int) (((byte) (128)))),
-                ((int) (((byte) (128)))), ((int) (((byte) (255)))));
-            this.btnAddUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddUser.Font = new System.Drawing.Font("Arial Rounded MT Bold", 19.8F,
-                System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.btnAddUser.ForeColor = System.Drawing.Color.White;
-            this.btnAddUser.Location = new System.Drawing.Point(307, 365);
-            this.btnAddUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnAddUser.Name = "btnAddUser";
-            this.btnAddUser.Size = new System.Drawing.Size(398, 104);
-            this.btnAddUser.TabIndex = 7;
-            this.btnAddUser.Text = "AGREGAR";
-            this.btnAddUser.UseVisualStyleBackColor = false;
-            // 
             // cmbBusiness
             // 
-            this.cmbBusiness.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.cmbBusiness.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cmbBusiness.FormattingEnabled = true;
-            this.cmbBusiness.Location = new System.Drawing.Point(344, 291);
+            this.cmbBusiness.Location = new System.Drawing.Point(344, 251);
             this.cmbBusiness.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbBusiness.Name = "cmbBusiness";
             this.cmbBusiness.Size = new System.Drawing.Size(323, 31);
@@ -322,6 +305,7 @@ namespace App_Delivery_HUGO
             // tableLayoutPanel5
             // 
             this.tableLayoutPanel5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.tableLayoutPanel5.BackColor = System.Drawing.Color.MediumOrchid;
             this.tableLayoutPanel5.ColumnCount = 3;
             this.tableLayoutPanel5.ColumnStyles.Add(
                 new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.93108F));
@@ -330,7 +314,7 @@ namespace App_Delivery_HUGO
             this.tableLayoutPanel5.ColumnStyles.Add(
                 new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.0169F));
             this.tableLayoutPanel5.Controls.Add(this.label6, 0, 1);
-            this.tableLayoutPanel5.Controls.Add(this.btnDeleteUser, 1, 3);
+            this.tableLayoutPanel5.Controls.Add(this.btnDeleteProduct, 1, 3);
             this.tableLayoutPanel5.Controls.Add(this.cmbProductDelete, 1, 1);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 2);
@@ -360,27 +344,28 @@ namespace App_Delivery_HUGO
             this.label6.Text = "PRODUCTO A ELIMINAR:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnDeleteUser
+            // btnDeleteProduct
             // 
-            this.btnDeleteUser.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (255)))),
+            this.btnDeleteProduct.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (255)))),
                 ((int) (((byte) (128)))), ((int) (((byte) (128)))));
-            this.btnDeleteUser.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnDeleteUser.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int) (((byte) (255)))),
+            this.btnDeleteProduct.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnDeleteProduct.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int) (((byte) (255)))),
                 ((int) (((byte) (192)))), ((int) (((byte) (192)))));
-            this.btnDeleteUser.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.btnDeleteUser.FlatAppearance.MouseOverBackColor =
+            this.btnDeleteProduct.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
+            this.btnDeleteProduct.FlatAppearance.MouseOverBackColor =
                 System.Drawing.Color.FromArgb(((int) (((byte) (255)))), ((int) (((byte) (192)))),
                     ((int) (((byte) (192)))));
-            this.btnDeleteUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDeleteUser.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F,
+            this.btnDeleteProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeleteProduct.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F,
                 System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.btnDeleteUser.Location = new System.Drawing.Point(286, 362);
-            this.btnDeleteUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnDeleteUser.Name = "btnDeleteUser";
-            this.btnDeleteUser.Size = new System.Drawing.Size(302, 89);
-            this.btnDeleteUser.TabIndex = 2;
-            this.btnDeleteUser.Text = "ELIMINAR";
-            this.btnDeleteUser.UseVisualStyleBackColor = false;
+            this.btnDeleteProduct.Location = new System.Drawing.Point(286, 362);
+            this.btnDeleteProduct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDeleteProduct.Name = "btnDeleteProduct";
+            this.btnDeleteProduct.Size = new System.Drawing.Size(302, 89);
+            this.btnDeleteProduct.TabIndex = 2;
+            this.btnDeleteProduct.Text = "ELIMINAR";
+            this.btnDeleteProduct.UseVisualStyleBackColor = false;
+            this.btnDeleteProduct.Click += new System.EventHandler(this.btnDeleteProduct_Click);
             // 
             // cmbProductDelete
             // 
@@ -392,6 +377,28 @@ namespace App_Delivery_HUGO
             this.cmbProductDelete.Name = "cmbProductDelete";
             this.cmbProductDelete.Size = new System.Drawing.Size(274, 31);
             this.cmbProductDelete.TabIndex = 1;
+            // 
+            // btnAddProduct
+            // 
+            this.btnAddProduct.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnAddProduct.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAddProduct.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnAddProduct.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
+            this.btnAddProduct.FlatAppearance.MouseOverBackColor =
+                System.Drawing.Color.FromArgb(((int) (((byte) (128)))), ((int) (((byte) (128)))),
+                    ((int) (((byte) (255)))));
+            this.btnAddProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddProduct.Font = new System.Drawing.Font("Arial Rounded MT Bold", 19.8F,
+                System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.btnAddProduct.ForeColor = System.Drawing.Color.White;
+            this.btnAddProduct.Location = new System.Drawing.Point(307, 365);
+            this.btnAddProduct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAddProduct.Name = "btnAddProduct";
+            this.btnAddProduct.Size = new System.Drawing.Size(398, 104);
+            this.btnAddProduct.TabIndex = 9;
+            this.btnAddProduct.Text = "AGREGAR";
+            this.btnAddProduct.UseVisualStyleBackColor = false;
+            this.btnAddProduct.Click += new System.EventHandler(this.btnAddProduct_Click);
             // 
             // Products
             // 
@@ -423,19 +430,19 @@ namespace App_Delivery_HUGO
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button btnUpdateUsers;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.ComboBox cmbBusiness;
-        private System.Windows.Forms.Button btnAddUser;
         private System.Windows.Forms.TextBox txtNameProduct;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.ComboBox cmbProductDelete;
-        private System.Windows.Forms.Button btnDeleteUser;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private System.Windows.Forms.Button btnDeleteProduct;
+        private System.Windows.Forms.Button btnAddProduct;
+        private System.Windows.Forms.Button btnUpdateProducts;
     }
 }

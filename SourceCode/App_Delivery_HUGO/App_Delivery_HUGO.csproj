@@ -97,12 +97,16 @@
         <Compile Include="Address.Designer.cs">
           <DependentUpon>Address.cs</DependentUpon>
         </Compile>
+        <Compile Include="AddressClass.cs" />
+        <Compile Include="AddressDAO.cs" />
         <Compile Include="Business.cs">
           <SubType>UserControl</SubType>
         </Compile>
         <Compile Include="Business.Designer.cs">
           <DependentUpon>Business.cs</DependentUpon>
         </Compile>
+        <Compile Include="BusinessClass.cs" />
+        <Compile Include="BusinessDAO.cs" />
         <Compile Include="ChangePassword.cs">
           <SubType>UserControl</SubType>
         </Compile>
@@ -134,6 +138,8 @@
         <Compile Include="Orders.Designer.cs">
           <DependentUpon>Orders.cs</DependentUpon>
         </Compile>
+        <Compile Include="Product.cs" />
+        <Compile Include="ProductDAO.cs" />
         <Compile Include="Products.cs">
           <SubType>UserControl</SubType>
         </Compile>

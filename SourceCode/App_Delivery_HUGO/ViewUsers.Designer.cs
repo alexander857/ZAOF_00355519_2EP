@@ -180,6 +180,7 @@ namespace App_Delivery_HUGO
             this.btnUpdateUsers.TabIndex = 1;
             this.btnUpdateUsers.Text = "ACTUALIZAR";
             this.btnUpdateUsers.UseVisualStyleBackColor = false;
+            this.btnUpdateUsers.Click += new System.EventHandler(this.btnUpdateUsers_Click);
             // 
             // dataGridView1
             // 
@@ -430,15 +431,15 @@ namespace App_Delivery_HUGO
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.38843F));
             this.tableLayoutPanel5.RowStyles.Add(
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.04132F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(788, 488);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(788, 478);
             this.tableLayoutPanel5.TabIndex = 0;
             // 
             // label6
             // 
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Location = new System.Drawing.Point(3, 113);
+            this.label6.Location = new System.Drawing.Point(3, 111);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(265, 80);
+            this.label6.Size = new System.Drawing.Size(265, 79);
             this.label6.TabIndex = 0;
             this.label6.Text = "USUARIO A ELIMINAR:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -457,10 +458,10 @@ namespace App_Delivery_HUGO
             this.btnDeleteUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDeleteUser.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F,
                 System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.btnDeleteUser.Location = new System.Drawing.Point(274, 300);
+            this.btnDeleteUser.Location = new System.Drawing.Point(274, 295);
             this.btnDeleteUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDeleteUser.Name = "btnDeleteUser";
-            this.btnDeleteUser.Size = new System.Drawing.Size(267, 85);
+            this.btnDeleteUser.Size = new System.Drawing.Size(267, 83);
             this.btnDeleteUser.TabIndex = 2;
             this.btnDeleteUser.Text = "ELIMINAR";
             this.btnDeleteUser.UseVisualStyleBackColor = false;
@@ -471,7 +472,7 @@ namespace App_Delivery_HUGO
             this.cmbUserDelete.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.tableLayoutPanel5.SetColumnSpan(this.cmbUserDelete, 2);
             this.cmbUserDelete.FormattingEnabled = true;
-            this.cmbUserDelete.Location = new System.Drawing.Point(392, 160);
+            this.cmbUserDelete.Location = new System.Drawing.Point(392, 157);
             this.cmbUserDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbUserDelete.Name = "cmbUserDelete";
             this.cmbUserDelete.Size = new System.Drawing.Size(274, 31);

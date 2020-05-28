@@ -25,6 +25,7 @@ namespace App_Delivery_HUGO
             FillComboBoxUsers();
         }
 
+        //actualiza el combobox de usuarios
         public void FillComboBoxUsers()
         {
             cmbUserDelete.DataSource = null;
@@ -69,6 +70,11 @@ namespace App_Delivery_HUGO
                         UserDAO.AddUser(newUser);
 
                         MessageBox.Show("Usuario agregado");
+                        
+                        //se limpian los txt y se actualizan los users
+                        txtFullName.Text = "";
+                        txtUsername.Text = "";
+                        FillComboBoxUsers();
                     }
                 }
                 catch (Exception ex)
@@ -81,14 +87,34 @@ namespace App_Delivery_HUGO
 
         private void btnDeleteUser_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Seguro desea eliminar el usuario?", "Atencion",
-                MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            try
             {
-                int id = Convert.ToInt32(cmbUserDelete.SelectedValue);
-                UserDAO.DeleteUser(id);
+                if (txtUsername.Text.Equals(unUser.Username))
+                {
+                    MessageBox.Show("No puedes eliminarte tu mismo!", "Error", 
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (MessageBox.Show("Seguro desea eliminar el usuario?", "Atencion",
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    int id = Convert.ToInt32(cmbUserDelete.SelectedValue);
+                    UserDAO.DeleteUser(id);
                 
-                MessageBox.Show("Usuario eliminado");
+                    MessageBox.Show("Usuario eliminado");
+                    FillComboBoxUsers();
+                }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ha ocurrido un error!");
+            }
+            
+        }
+
+        //actualizar usuarios
+        private void btnUpdateUsers_Click(object sender, EventArgs e)
+        {
+            UpdateDataGrid();
         }
     }
 }
