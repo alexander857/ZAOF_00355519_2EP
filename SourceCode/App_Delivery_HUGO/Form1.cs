@@ -14,11 +14,10 @@ namespace App_Delivery_HUGO
     {
         private User unUser;
         private UserControl current;
-        public Form1(User u)
+        public Form1(User user)
         {
             InitializeComponent();
-            unUser = u;
-            current = orders1;
+            unUser = user;
         }
 
         private void Form1_Load(object sender, EventArgs e)

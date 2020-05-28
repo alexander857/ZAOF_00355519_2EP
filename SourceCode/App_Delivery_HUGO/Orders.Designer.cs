@@ -165,8 +165,9 @@ namespace App_Delivery_HUGO
             this.btnUptadeOrders.Name = "btnUptadeOrders";
             this.btnUptadeOrders.Size = new System.Drawing.Size(881, 68);
             this.btnUptadeOrders.TabIndex = 1;
-            this.btnUptadeOrders.Text = "ACTUALIZAR";
+            this.btnUptadeOrders.Text = "VER/ACTUALIZAR";
             this.btnUptadeOrders.UseVisualStyleBackColor = false;
+            this.btnUptadeOrders.Click += new System.EventHandler(this.btnUptadeOrders_Click);
             // 
             // dataGridView1
             // 
@@ -264,6 +265,7 @@ namespace App_Delivery_HUGO
             this.btnSendOrder.TabIndex = 2;
             this.btnSendOrder.Text = "ENVIAR";
             this.btnSendOrder.UseVisualStyleBackColor = false;
+            this.btnSendOrder.Click += new System.EventHandler(this.btnSendOrder_Click);
             // 
             // label3
             // 
@@ -380,6 +382,7 @@ namespace App_Delivery_HUGO
             this.btnDeleteOrder.TabIndex = 2;
             this.btnDeleteOrder.Text = "ELIMINAR";
             this.btnDeleteOrder.UseVisualStyleBackColor = false;
+            this.btnDeleteOrder.Click += new System.EventHandler(this.btnDeleteOrder_Click);
             // 
             // txtIdOrderDelete
             // 

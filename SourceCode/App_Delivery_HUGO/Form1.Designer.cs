@@ -42,7 +42,7 @@
             this.btnOrderUser = new System.Windows.Forms.ToolStripMenuItem();
             this.aJUSTESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnChangePassword = new System.Windows.Forms.ToolStripMenuItem();
-            this.orders1 = new App_Delivery_HUGO.Orders(unUser);
+            //this.orders1 = new App_Delivery_HUGO.Orders(unUser);
             this.tableLayoutPanel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -56,7 +56,6 @@
             this.tableLayoutPanel1.ColumnStyles.Add(
                 new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Controls.Add(this.menuStrip1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.orders1, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -184,16 +183,6 @@
             this.btnChangePassword.Text = "CAMBIAR CONTRASEÑA";
             this.btnChangePassword.Click += new System.EventHandler(this.btnChangePassword_Click);
             // 
-            // orders1
-            // 
-            this.tableLayoutPanel1.SetColumnSpan(this.orders1, 2);
-            this.orders1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.orders1.Location = new System.Drawing.Point(3, 43);
-            this.orders1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.orders1.Name = "orders1";
-            this.orders1.Size = new System.Drawing.Size(856, 559);
-            this.orders1.TabIndex = 1;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -233,6 +222,5 @@
         private System.Windows.Forms.ToolStripMenuItem btnAddress;
         private System.Windows.Forms.ToolStripMenuItem btnOrderUser;
         private System.Windows.Forms.ToolStripMenuItem btnChangePassword;
-        private App_Delivery_HUGO.Orders orders1;
     }
 }

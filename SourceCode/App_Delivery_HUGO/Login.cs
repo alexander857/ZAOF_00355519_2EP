@@ -28,9 +28,9 @@ namespace App_Delivery_HUGO
         {
             if (cmbUsers.SelectedValue.Equals(txtPassword.Text))
             {
-                User u = (User) cmbUsers.SelectedItem;
+                User user = (User) cmbUsers.SelectedItem;
                 
-                Form1 f = new Form1(u);
+                Form1 f = new Form1(user);
                 f.Show();
                 Hide();
             }

@@ -32,6 +32,8 @@
       <e p="Login.Designer.cs" t="Include" />
       <e p="Login.resx" t="Include" />
       <e p="obj" t="ExcludeRecursive" />
+      <e p="OrderClass.cs" t="Include" />
+      <e p="OrderDAO.cs" t="Include" />
       <e p="Orders.cs" t="Include" />
       <e p="Orders.Designer.cs" t="Include" />
       <e p="Orders.resx" t="Include" />

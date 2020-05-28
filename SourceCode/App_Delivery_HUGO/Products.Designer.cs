@@ -45,12 +45,12 @@ namespace App_Delivery_HUGO
             this.label4 = new System.Windows.Forms.Label();
             this.txtNameProduct = new System.Windows.Forms.TextBox();
             this.cmbBusiness = new System.Windows.Forms.ComboBox();
+            this.btnAddProduct = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.label6 = new System.Windows.Forms.Label();
             this.btnDeleteProduct = new System.Windows.Forms.Button();
             this.cmbProductDelete = new System.Windows.Forms.ComboBox();
-            this.btnAddProduct = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -196,7 +196,7 @@ namespace App_Delivery_HUGO
             this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage2.Size = new System.Drawing.Size(775, 528);
+            this.tabPage2.Size = new System.Drawing.Size(775, 526);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "AGREGAR";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -234,7 +234,7 @@ namespace App_Delivery_HUGO
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.61856F));
             this.tableLayoutPanel3.RowStyles.Add(
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.896907F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(769, 524);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(769, 514);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
             // label2
@@ -246,7 +246,7 @@ namespace App_Delivery_HUGO
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(763, 79);
+            this.label2.Size = new System.Drawing.Size(763, 77);
             this.label2.TabIndex = 0;
             this.label2.Text = "INGRESE LOS DATOS DEL USUARIO";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -254,9 +254,9 @@ namespace App_Delivery_HUGO
             // label3
             // 
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Location = new System.Drawing.Point(3, 79);
+            this.label3.Location = new System.Drawing.Point(3, 77);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(298, 130);
+            this.label3.Size = new System.Drawing.Size(298, 127);
             this.label3.TabIndex = 1;
             this.label3.Text = "NOMBRE PRODUCTO:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -264,9 +264,9 @@ namespace App_Delivery_HUGO
             // label4
             // 
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Location = new System.Drawing.Point(3, 209);
+            this.label4.Location = new System.Drawing.Point(3, 204);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(298, 115);
+            this.label4.Size = new System.Drawing.Size(298, 112);
             this.label4.TabIndex = 2;
             this.label4.Text = "NEGOCIO:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -274,7 +274,7 @@ namespace App_Delivery_HUGO
             // txtNameProduct
             // 
             this.txtNameProduct.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtNameProduct.Location = new System.Drawing.Point(343, 128);
+            this.txtNameProduct.Location = new System.Drawing.Point(343, 125);
             this.txtNameProduct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNameProduct.Name = "txtNameProduct";
             this.txtNameProduct.Size = new System.Drawing.Size(325, 31);
@@ -284,11 +284,33 @@ namespace App_Delivery_HUGO
             // 
             this.cmbBusiness.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cmbBusiness.FormattingEnabled = true;
-            this.cmbBusiness.Location = new System.Drawing.Point(344, 251);
+            this.cmbBusiness.Location = new System.Drawing.Point(344, 244);
             this.cmbBusiness.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbBusiness.Name = "cmbBusiness";
             this.cmbBusiness.Size = new System.Drawing.Size(323, 31);
             this.cmbBusiness.TabIndex = 8;
+            // 
+            // btnAddProduct
+            // 
+            this.btnAddProduct.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnAddProduct.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAddProduct.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnAddProduct.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
+            this.btnAddProduct.FlatAppearance.MouseOverBackColor =
+                System.Drawing.Color.FromArgb(((int) (((byte) (128)))), ((int) (((byte) (128)))),
+                    ((int) (((byte) (255)))));
+            this.btnAddProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddProduct.Font = new System.Drawing.Font("Arial Rounded MT Bold", 19.8F,
+                System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.btnAddProduct.ForeColor = System.Drawing.Color.White;
+            this.btnAddProduct.Location = new System.Drawing.Point(307, 356);
+            this.btnAddProduct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAddProduct.Name = "btnAddProduct";
+            this.btnAddProduct.Size = new System.Drawing.Size(398, 102);
+            this.btnAddProduct.TabIndex = 9;
+            this.btnAddProduct.Text = "AGREGAR";
+            this.btnAddProduct.UseVisualStyleBackColor = false;
+            this.btnAddProduct.Click += new System.EventHandler(this.btnAddProduct_Click);
             // 
             // tabPage3
             // 
@@ -297,7 +319,7 @@ namespace App_Delivery_HUGO
             this.tabPage3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage3.Size = new System.Drawing.Size(775, 528);
+            this.tabPage3.Size = new System.Drawing.Size(775, 526);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "ELIMINAR";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -331,15 +353,15 @@ namespace App_Delivery_HUGO
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.74809F));
             this.tableLayoutPanel5.RowStyles.Add(
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.16794F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(769, 524);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(769, 514);
             this.tableLayoutPanel5.TabIndex = 1;
             // 
             // label6
             // 
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Location = new System.Drawing.Point(3, 122);
+            this.label6.Location = new System.Drawing.Point(3, 120);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(277, 86);
+            this.label6.Size = new System.Drawing.Size(277, 85);
             this.label6.TabIndex = 0;
             this.label6.Text = "PRODUCTO A ELIMINAR:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -358,10 +380,10 @@ namespace App_Delivery_HUGO
             this.btnDeleteProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDeleteProduct.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F,
                 System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.btnDeleteProduct.Location = new System.Drawing.Point(286, 362);
+            this.btnDeleteProduct.Location = new System.Drawing.Point(286, 356);
             this.btnDeleteProduct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDeleteProduct.Name = "btnDeleteProduct";
-            this.btnDeleteProduct.Size = new System.Drawing.Size(302, 89);
+            this.btnDeleteProduct.Size = new System.Drawing.Size(302, 87);
             this.btnDeleteProduct.TabIndex = 2;
             this.btnDeleteProduct.Text = "ELIMINAR";
             this.btnDeleteProduct.UseVisualStyleBackColor = false;
@@ -372,33 +394,11 @@ namespace App_Delivery_HUGO
             this.cmbProductDelete.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tableLayoutPanel5.SetColumnSpan(this.cmbProductDelete, 2);
             this.cmbProductDelete.FormattingEnabled = true;
-            this.cmbProductDelete.Location = new System.Drawing.Point(389, 149);
+            this.cmbProductDelete.Location = new System.Drawing.Point(389, 147);
             this.cmbProductDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbProductDelete.Name = "cmbProductDelete";
             this.cmbProductDelete.Size = new System.Drawing.Size(274, 31);
             this.cmbProductDelete.TabIndex = 1;
-            // 
-            // btnAddProduct
-            // 
-            this.btnAddProduct.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnAddProduct.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAddProduct.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnAddProduct.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
-            this.btnAddProduct.FlatAppearance.MouseOverBackColor =
-                System.Drawing.Color.FromArgb(((int) (((byte) (128)))), ((int) (((byte) (128)))),
-                    ((int) (((byte) (255)))));
-            this.btnAddProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddProduct.Font = new System.Drawing.Font("Arial Rounded MT Bold", 19.8F,
-                System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.btnAddProduct.ForeColor = System.Drawing.Color.White;
-            this.btnAddProduct.Location = new System.Drawing.Point(307, 365);
-            this.btnAddProduct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnAddProduct.Name = "btnAddProduct";
-            this.btnAddProduct.Size = new System.Drawing.Size(398, 104);
-            this.btnAddProduct.TabIndex = 9;
-            this.btnAddProduct.Text = "AGREGAR";
-            this.btnAddProduct.UseVisualStyleBackColor = false;
-            this.btnAddProduct.Click += new System.EventHandler(this.btnAddProduct_Click);
             // 
             // Products
             // 
