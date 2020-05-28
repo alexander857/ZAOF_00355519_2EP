@@ -32,6 +32,7 @@ namespace App_Delivery_HUGO
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnAddAddress = new System.Windows.Forms.Button();
             this.txtAddAdress = new System.Windows.Forms.TextBox();
@@ -44,7 +45,6 @@ namespace App_Delivery_HUGO
             this.btnModifyAddress = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize) (this.dataGridView1)).BeginInit();
@@ -54,11 +54,11 @@ namespace App_Delivery_HUGO
             // 
             this.tableLayoutPanel1.ColumnCount = 4;
             this.tableLayoutPanel1.ColumnStyles.Add(
-                new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.50702F));
+                new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.88761F));
             this.tableLayoutPanel1.ColumnStyles.Add(
-                new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.3908F));
+                new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.15709F));
             this.tableLayoutPanel1.ColumnStyles.Add(
-                new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.30651F));
+                new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.15964F));
             this.tableLayoutPanel1.ColumnStyles.Add(
                 new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.66794F));
             this.tableLayoutPanel1.Controls.Add(this.label6, 2, 0);
@@ -80,6 +80,7 @@ namespace App_Delivery_HUGO
                 System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.tableLayoutPanel1.ForeColor = System.Drawing.Color.White;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 8;
             this.tableLayoutPanel1.RowStyles.Add(
@@ -101,6 +102,19 @@ namespace App_Delivery_HUGO
             this.tableLayoutPanel1.Size = new System.Drawing.Size(783, 550);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
+            // label6
+            // 
+            this.tableLayoutPanel1.SetColumnSpan(this.label6, 2);
+            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label6.Location = new System.Drawing.Point(434, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(346, 42);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "DIRECCIONES";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // label1
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.label1, 2);
@@ -109,7 +123,7 @@ namespace App_Delivery_HUGO
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(463, 42);
+            this.label1.Size = new System.Drawing.Size(425, 42);
             this.label1.TabIndex = 0;
             this.label1.Text = "AGREGAR DIRECCION";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -119,17 +133,20 @@ namespace App_Delivery_HUGO
             this.btnAddAddress.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))),
                 ((int) (((byte) (0)))), ((int) (((byte) (192)))));
             this.btnAddAddress.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAddAddress.Location = new System.Drawing.Point(328, 45);
+            this.btnAddAddress.Location = new System.Drawing.Point(284, 44);
+            this.btnAddAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddAddress.Name = "btnAddAddress";
-            this.btnAddAddress.Size = new System.Drawing.Size(138, 57);
+            this.btnAddAddress.Size = new System.Drawing.Size(144, 59);
             this.btnAddAddress.TabIndex = 1;
             this.btnAddAddress.Text = "AGREGAR";
             this.btnAddAddress.UseVisualStyleBackColor = false;
+            this.btnAddAddress.Click += new System.EventHandler(this.btnAddAddress_Click);
             // 
             // txtAddAdress
             // 
             this.txtAddAdress.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtAddAdress.Location = new System.Drawing.Point(34, 59);
+            this.txtAddAdress.Location = new System.Drawing.Point(12, 59);
+            this.txtAddAdress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAddAdress.Name = "txtAddAdress";
             this.txtAddAdress.Size = new System.Drawing.Size(257, 28);
             this.txtAddAdress.TabIndex = 2;
@@ -142,7 +159,7 @@ namespace App_Delivery_HUGO
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label2.Location = new System.Drawing.Point(3, 105);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(463, 59);
+            this.label2.Size = new System.Drawing.Size(425, 59);
             this.label2.TabIndex = 3;
             this.label2.Text = "ELIMINAR DIRECCION POR ID";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -151,7 +168,8 @@ namespace App_Delivery_HUGO
             // 
             this.cmbIDAddress.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cmbIDAddress.FormattingEnabled = true;
-            this.cmbIDAddress.Location = new System.Drawing.Point(32, 180);
+            this.cmbIDAddress.Location = new System.Drawing.Point(10, 182);
+            this.cmbIDAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbIDAddress.Name = "cmbIDAddress";
             this.cmbIDAddress.Size = new System.Drawing.Size(260, 29);
             this.cmbIDAddress.TabIndex = 4;
@@ -161,12 +179,14 @@ namespace App_Delivery_HUGO
             this.btnDeleteAddress.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))),
                 ((int) (((byte) (0)))), ((int) (((byte) (192)))));
             this.btnDeleteAddress.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnDeleteAddress.Location = new System.Drawing.Point(328, 167);
+            this.btnDeleteAddress.Location = new System.Drawing.Point(284, 166);
+            this.btnDeleteAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDeleteAddress.Name = "btnDeleteAddress";
-            this.btnDeleteAddress.Size = new System.Drawing.Size(138, 60);
+            this.btnDeleteAddress.Size = new System.Drawing.Size(144, 62);
             this.btnDeleteAddress.TabIndex = 5;
             this.btnDeleteAddress.Text = "ELIMINAR";
             this.btnDeleteAddress.UseVisualStyleBackColor = false;
+            this.btnDeleteAddress.Click += new System.EventHandler(this.btnDeleteAddress_Click);
             // 
             // label3
             // 
@@ -176,7 +196,7 @@ namespace App_Delivery_HUGO
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label3.Location = new System.Drawing.Point(3, 230);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(463, 112);
+            this.label3.Size = new System.Drawing.Size(425, 112);
             this.label3.TabIndex = 6;
             this.label3.Text = "MODIFICAR DIRECCION";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -185,7 +205,8 @@ namespace App_Delivery_HUGO
             // 
             this.cmbIDAddressModify.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cmbIDAddressModify.FormattingEnabled = true;
-            this.cmbIDAddressModify.Location = new System.Drawing.Point(32, 362);
+            this.cmbIDAddressModify.Location = new System.Drawing.Point(10, 361);
+            this.cmbIDAddressModify.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbIDAddressModify.Name = "cmbIDAddressModify";
             this.cmbIDAddressModify.Size = new System.Drawing.Size(260, 29);
             this.cmbIDAddressModify.TabIndex = 7;
@@ -193,7 +214,8 @@ namespace App_Delivery_HUGO
             // txtNewAddress
             // 
             this.txtNewAddress.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtNewAddress.Location = new System.Drawing.Point(34, 430);
+            this.txtNewAddress.Location = new System.Drawing.Point(12, 430);
+            this.txtNewAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNewAddress.Name = "txtNewAddress";
             this.txtNewAddress.Size = new System.Drawing.Size(257, 28);
             this.txtNewAddress.TabIndex = 8;
@@ -205,19 +227,21 @@ namespace App_Delivery_HUGO
             this.tableLayoutPanel1.SetColumnSpan(this.btnModifyAddress, 3);
             this.btnModifyAddress.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnModifyAddress.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModifyAddress.Location = new System.Drawing.Point(3, 481);
+            this.btnModifyAddress.Location = new System.Drawing.Point(3, 480);
+            this.btnModifyAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnModifyAddress.Name = "btnModifyAddress";
-            this.btnModifyAddress.Size = new System.Drawing.Size(622, 66);
+            this.btnModifyAddress.Size = new System.Drawing.Size(622, 68);
             this.btnModifyAddress.TabIndex = 9;
             this.btnModifyAddress.Text = "MODIFICAR";
             this.btnModifyAddress.UseVisualStyleBackColor = false;
+            this.btnModifyAddress.Click += new System.EventHandler(this.btnModifyAddress_Click);
             // 
             // label4
             // 
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Location = new System.Drawing.Point(328, 342);
+            this.label4.Location = new System.Drawing.Point(284, 342);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(138, 68);
+            this.label4.Size = new System.Drawing.Size(144, 68);
             this.label4.TabIndex = 10;
             this.label4.Text = "ID";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -226,25 +250,12 @@ namespace App_Delivery_HUGO
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.label5, 2);
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Location = new System.Drawing.Point(328, 410);
+            this.label5.Location = new System.Drawing.Point(284, 410);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(297, 68);
+            this.label5.Size = new System.Drawing.Size(341, 68);
             this.label5.TabIndex = 11;
             this.label5.Text = "NUEVA DIRECCION";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label6
-            // 
-            this.tableLayoutPanel1.SetColumnSpan(this.label6, 2);
-            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.8F, System.Drawing.FontStyle.Regular,
-                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label6.Location = new System.Drawing.Point(472, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(308, 42);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "DIRECCIONES";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // dataGridView1
             // 
@@ -254,12 +265,13 @@ namespace App_Delivery_HUGO
                 System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tableLayoutPanel1.SetColumnSpan(this.dataGridView1, 2);
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(472, 45);
+            this.dataGridView1.Location = new System.Drawing.Point(434, 44);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.tableLayoutPanel1.SetRowSpan(this.dataGridView1, 5);
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(308, 362);
+            this.dataGridView1.Size = new System.Drawing.Size(346, 364);
             this.dataGridView1.TabIndex = 13;
             // 
             // Address
@@ -270,6 +282,7 @@ namespace App_Delivery_HUGO
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Address";
             this.Size = new System.Drawing.Size(783, 550);
+            this.Load += new System.EventHandler(this.Address_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize) (this.dataGridView1)).EndInit();
