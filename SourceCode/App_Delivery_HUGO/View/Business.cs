@@ -86,15 +86,24 @@ namespace App_Delivery_HUGO
 
         private void btnDeleteBusiness_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Seguro desea eliminar el negocio?", "Atencion",
-                MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            try
             {
-                int id = Convert.ToInt32(cmbBusiness.SelectedValue);
+                if (MessageBox.Show("Seguro desea eliminar el negocio?", "Atencion",
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    int id = Convert.ToInt32(cmbBusiness.SelectedValue);
                 
-                BusinessDAO.DeleteBusiness(id);
+                    BusinessDAO.DeleteBusiness(id);
                 
-                MessageBox.Show("Negocio eliminado");
+                    MessageBox.Show("Negocio eliminado");
+                    FillComboBoxBusiness();
+                }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ha ocurrido un error!");
+            }
+            
         }
 
         public void CleanTxtAddBussiness()

@@ -245,7 +245,7 @@ namespace App_Delivery_HUGO
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.61856F));
             this.tableLayoutPanel3.RowStyles.Add(
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.896907F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(788, 478);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(788, 488);
             this.tableLayoutPanel3.TabIndex = 0;
             // 
             // label2
@@ -256,7 +256,7 @@ namespace App_Delivery_HUGO
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(782, 71);
+            this.label2.Size = new System.Drawing.Size(782, 72);
             this.label2.TabIndex = 0;
             this.label2.Text = "INGRESE LOS DATOS DEL USUARIO";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -264,9 +264,9 @@ namespace App_Delivery_HUGO
             // label3
             // 
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Location = new System.Drawing.Point(3, 71);
+            this.label3.Location = new System.Drawing.Point(3, 72);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(306, 59);
+            this.label3.Size = new System.Drawing.Size(306, 60);
             this.label3.TabIndex = 1;
             this.label3.Text = "NOMBRE COMPLETO:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -274,9 +274,9 @@ namespace App_Delivery_HUGO
             // label4
             // 
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Location = new System.Drawing.Point(3, 130);
+            this.label4.Location = new System.Drawing.Point(3, 132);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(306, 62);
+            this.label4.Size = new System.Drawing.Size(306, 63);
             this.label4.TabIndex = 2;
             this.label4.Text = "USUARIO:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -284,9 +284,9 @@ namespace App_Delivery_HUGO
             // label5
             // 
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Location = new System.Drawing.Point(3, 192);
+            this.label5.Location = new System.Drawing.Point(3, 195);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(306, 140);
+            this.label5.Size = new System.Drawing.Size(306, 143);
             this.label5.TabIndex = 3;
             this.label5.Text = "TIPO:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -294,7 +294,7 @@ namespace App_Delivery_HUGO
             // txtFullName
             // 
             this.txtFullName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtFullName.Location = new System.Drawing.Point(338, 85);
+            this.txtFullName.Location = new System.Drawing.Point(338, 86);
             this.txtFullName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtFullName.Name = "txtFullName";
             this.txtFullName.Size = new System.Drawing.Size(362, 31);
@@ -303,7 +303,7 @@ namespace App_Delivery_HUGO
             // txtUsername
             // 
             this.txtUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtUsername.Location = new System.Drawing.Point(338, 145);
+            this.txtUsername.Location = new System.Drawing.Point(338, 148);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(362, 31);
@@ -313,11 +313,11 @@ namespace App_Delivery_HUGO
             // 
             this.groupBox1.Controls.Add(this.tableLayoutPanel4);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Location = new System.Drawing.Point(315, 194);
+            this.groupBox1.Location = new System.Drawing.Point(315, 197);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(408, 136);
+            this.groupBox1.Size = new System.Drawing.Size(408, 139);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Seleccione uno:";
@@ -340,7 +340,7 @@ namespace App_Delivery_HUGO
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.RowStyles.Add(
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(402, 108);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(402, 111);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
             // radAdmin
@@ -349,20 +349,20 @@ namespace App_Delivery_HUGO
             this.radAdmin.Location = new System.Drawing.Point(3, 2);
             this.radAdmin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radAdmin.Name = "radAdmin";
-            this.radAdmin.Size = new System.Drawing.Size(396, 50);
+            this.radAdmin.Size = new System.Drawing.Size(396, 51);
             this.radAdmin.TabIndex = 0;
-            this.radAdmin.TabStop = true;
             this.radAdmin.Text = "Administrador";
             this.radAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.radAdmin.UseVisualStyleBackColor = true;
             // 
             // radUser
             // 
+            this.radUser.Checked = true;
             this.radUser.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radUser.Location = new System.Drawing.Point(3, 56);
+            this.radUser.Location = new System.Drawing.Point(3, 57);
             this.radUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.radUser.Name = "radUser";
-            this.radUser.Size = new System.Drawing.Size(396, 50);
+            this.radUser.Size = new System.Drawing.Size(396, 52);
             this.radUser.TabIndex = 1;
             this.radUser.TabStop = true;
             this.radUser.Text = "Usuario";
@@ -381,10 +381,10 @@ namespace App_Delivery_HUGO
             this.btnAddUser.Font = new System.Drawing.Font("Arial Rounded MT Bold", 19.8F,
                 System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.btnAddUser.ForeColor = System.Drawing.Color.White;
-            this.btnAddUser.Location = new System.Drawing.Point(315, 334);
+            this.btnAddUser.Location = new System.Drawing.Point(315, 340);
             this.btnAddUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddUser.Name = "btnAddUser";
-            this.btnAddUser.Size = new System.Drawing.Size(408, 93);
+            this.btnAddUser.Size = new System.Drawing.Size(408, 95);
             this.btnAddUser.TabIndex = 7;
             this.btnAddUser.Text = "AGREGAR";
             this.btnAddUser.UseVisualStyleBackColor = false;

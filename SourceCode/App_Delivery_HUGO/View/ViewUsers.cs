@@ -54,7 +54,7 @@ namespace App_Delivery_HUGO
 
                     if (exist)
                     {
-                        MessageBox.Show("Alguien mas ya esta usando ese nombre de usuario!", "Error", 
+                        MessageBox.Show("Alguien mas ya esta usando ese nombre de usuario!", "Error",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                     else

@@ -314,7 +314,7 @@ namespace App_Delivery_HUGO
             this.tabPage3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage3.Size = new System.Drawing.Size(893, 553);
+            this.tabPage3.Size = new System.Drawing.Size(893, 554);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "ELIMINAR";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -348,15 +348,15 @@ namespace App_Delivery_HUGO
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.38843F));
             this.tableLayoutPanel5.RowStyles.Add(
                 new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.04132F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(887, 540);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(887, 550);
             this.tableLayoutPanel5.TabIndex = 1;
             // 
             // label6
             // 
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Location = new System.Drawing.Point(3, 126);
+            this.label6.Location = new System.Drawing.Point(3, 128);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(299, 89);
+            this.label6.Size = new System.Drawing.Size(299, 90);
             this.label6.TabIndex = 0;
             this.label6.Text = "ID DE ORDEN A ELIMINAR:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -375,10 +375,10 @@ namespace App_Delivery_HUGO
             this.btnDeleteOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDeleteOrder.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F,
                 System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.btnDeleteOrder.Location = new System.Drawing.Point(308, 334);
+            this.btnDeleteOrder.Location = new System.Drawing.Point(308, 339);
             this.btnDeleteOrder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDeleteOrder.Name = "btnDeleteOrder";
-            this.btnDeleteOrder.Size = new System.Drawing.Size(302, 95);
+            this.btnDeleteOrder.Size = new System.Drawing.Size(302, 97);
             this.btnDeleteOrder.TabIndex = 2;
             this.btnDeleteOrder.Text = "ELIMINAR";
             this.btnDeleteOrder.UseVisualStyleBackColor = false;
@@ -388,7 +388,7 @@ namespace App_Delivery_HUGO
             // 
             this.txtIdOrderDelete.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tableLayoutPanel5.SetColumnSpan(this.txtIdOrderDelete, 2);
-            this.txtIdOrderDelete.Location = new System.Drawing.Point(462, 155);
+            this.txtIdOrderDelete.Location = new System.Drawing.Point(462, 157);
             this.txtIdOrderDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtIdOrderDelete.Name = "txtIdOrderDelete";
             this.txtIdOrderDelete.Size = new System.Drawing.Size(267, 31);

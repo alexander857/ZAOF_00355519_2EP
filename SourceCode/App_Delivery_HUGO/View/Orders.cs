@@ -79,25 +79,50 @@ namespace App_Delivery_HUGO
         //eliminar orden
         private void btnDeleteOrder_Click(object sender, EventArgs e)
         {
-            if (txtIdOrderDelete.Text.Equals(""))
+            try
             {
-                MessageBox.Show("No deje espacios vacios!", "Error", MessageBoxButtons.OK, 
-                    MessageBoxIcon.Error);
-            }
-            else
-            {
-                if (MessageBox.Show("Seguro quiere eliminar la orden?", "Aviso", MessageBoxButtons.YesNo,
-                    MessageBoxIcon.Question) == DialogResult.Yes)
+                if (txtIdOrderDelete.Text.Equals(""))
                 {
-                    //se manda a eliminr la orden
+                    MessageBox.Show("No deje espacios vacios!", "Error", MessageBoxButtons.OK, 
+                        MessageBoxIcon.Error);
+                }
+                else
+                {
+                    bool exist = false;
                     int idOrder = Convert.ToInt32(txtIdOrderDelete.Text);
+
+                    //se verifica si esta la direccion con el id que se ingreso
+                    foreach (var ord in OrderDAO.getListaOrder(1,unUser.Id))
+                    {
+                        if (ord.IdOrder == idOrder)
+                            exist = true;
+                    }
+
+                    if (exist)
+                    {
+                        if (MessageBox.Show("Seguro quiere eliminar la orden?", "Aviso",
+                            MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                        {
+                            //se manda a eliminr la orden
+                            OrderDAO.DeleteUser(idOrder);
                     
-                    OrderDAO.DeleteUser(idOrder);
-                    
-                    MessageBox.Show("Orden eliminada con exito!");
-                    txtIdOrderDelete.Text = "";
+                            MessageBox.Show("Orden eliminada con exito!");
+                            txtIdOrderDelete.Text = "";
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("No exite una orden con ese id!", "Error", MessageBoxButtons.OK, 
+                            MessageBoxIcon.Error);
+                    }
+                
                 }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Algo salio mal!");
+            }
+            
         }
         
         //desactivar opciones
