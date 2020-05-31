@@ -66,7 +66,7 @@ namespace Preparcial.Controlador
 
         public static void CrearUsuario(string usuario)
         {
-            //fantaban las {} en "false" el tipo de usuario y no existe una columna "nombeUsuario"
+            //fantaban las {} en "false" el tipo de usuario y no existe una columna "nombreUsuario"
             //en la base
             ConexionBD.EjecutarComando("INSERT INTO USUARIO(nombre, contrasenia, tipo)" +
                                        $" VALUES('{usuario}', '{usuario}',{false})");
